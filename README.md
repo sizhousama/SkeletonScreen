@@ -53,8 +53,14 @@ mini program SkeletonScreen
 
 <!-- skeleton为根节点 -->
 <view class="body skeleton">
-  <view wx:for="{{rectlist}}" wx:key="index" class="rect skeleton-rect">{{item}}</view>
-  <view wx:for="{{circlelist}}" wx:key="index" class="circle skeleton-circle">{{item}}</view>
+
+  <view class="box">
+      <view wx:for="{{rectlist}}" wx:key="index" class="rect skeleton-rect">{{item}}</view>
+  </view>
+
+  <view class="box">
+      <view wx:for="{{circlelist}}" wx:key="index" class="circle skeleton-circle">{{item}}</view>
+  </view>
 </view>
 ```
 
@@ -80,7 +86,9 @@ Page({
                 circlelist
             },()=>{
                 // 隐藏骨架屏
-                that.data.showSkeleton=false
+                that.setData({
+                    showSkeleton:false
+                })
             })
         }
     })
@@ -97,3 +105,4 @@ Page({
 |show|NO|boolean|false|控制骨架屏的显示与隐藏|
 
 ## tips
+1.以最小节点原则添加相应class，如上文`<view class="box">`不要给box节点添加类名，否则渲染区域会很大，影响视觉效果。
