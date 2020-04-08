@@ -1,6 +1,6 @@
 # SkeletonScreen
 
-mini program SkeletonScreen
+mini program SkeletonScreen  
 骨架屏组件 提升用户体验 skr~
 
 ## 快速上手

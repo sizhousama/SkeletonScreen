@@ -1,0 +1,47 @@
+.skeletonbody {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9998;
+  overflow: hidden;
+}
+
+.rect {
+  background: #eee;
+  position: absolute;
+}
+
+.circle {
+  background:#eee;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shuttle{
+  background: linear-gradient(-45deg,#f2f2f2 25%,#e6e6e6 37%,#f3f3f3 63%);
+  background-size: 400% 100%;
+  animation: loading-anim 1.5s ease-out infinite;
+}
+
+.gradient{
+  background:#d9d9d9;
+  animation: loading-anim2 1s ease-in-out infinite alternate;
+}
+
+@keyframes loading-anim{
+  0%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+@keyframes loading-anim2{
+  0%{
+    background-color: #d9d9d9;
+  }
+  100%{
+    background-color:#eee;
+  }
+}

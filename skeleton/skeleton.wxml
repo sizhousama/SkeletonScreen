@@ -1,0 +1,12 @@
+<view wx:if='{{show}}' class='skeletonbody' style="width: {{systemInfo.width}}px; height: {{systemInfo.height}}px; background-color: {{bgcolor}};">
+
+
+  <!-- 循环，遍历绘制矩形节点，宽高参照js获取到的节点宽高，以绝对定位的方式定位 -->
+  <view wx:for="{{skeletonRectLists}}" wx:key="index" class="rect {{animation}}" style="width: {{item.width}}px; height: {{item.height}}px; left: {{item.left}}px; top: {{item.top}}px"></view>
+
+
+  <!-- 循环，遍历绘制圆形节点，宽高参照js获取到的节点宽高，以绝对定位的方式定位 -->
+  <view class='circle' wx:for="{{skeletonCircleLists}}" wx:key="index" class="circle {{animation}}" style="width: {{item.width}}px; height: {{item.height}}px;left: {{item.left}}px; top: {{item.top}}px;"></view>
+
+
+</view>
