@@ -24,9 +24,9 @@ mini program SkeletonScreen
 <skeleton root="skeleton" animation="shuttle" bgcolor="#fff" show="{{showSkeleton}}"></skeleton>
 ```
 ## step 3
-##### 为需要骨架屏加载的页面的根节点添加特殊类名以便获取节点
-##### 本组件约定  根节点-rect为矩形节点  根节点-circle为圆形节点
-##### 请在需要骨架载的节点上添加类名 如：
+  为需要骨架屏加载的页面的根节点添加特殊类名以便获取节点  
+  本组件约定  根节点-rect为矩形节点  根节点-circle为圆形节点  
+  请在需要骨架加载的节点上添加类名 如：  
 
 ```html
 <!-- index.wxml -->
