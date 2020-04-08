@@ -8,14 +8,18 @@ mini program SkeletonScreen
 ## step 2
 在需要骨架屏加载的页面引入该组件
 
-```Json
+```json
 //index.json
 {
 "usingComponents": {
-    "tabbar": "../component/tabBar/tabbar",
     "skeleton":"../component/skeleton/skeleton"
   },
 }
+```
+
+```html
+<!-- 骨架屏 -->
+<skeleton selector="skeleton" animation="shuttle" bgcolor="#fff" wx:if="{{showSkeleton}}"></skeleton>
 ```
 
 
