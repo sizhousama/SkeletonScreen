@@ -89,6 +89,11 @@ Page({
 });
 ```
 ## API
-|options|requird|type|default|description|
+|Options|Requird|Type|Default|Description|
 |:-----:|:-----:|:--:|:-----:|:---------:|
-|root|NO|string|skeleton|用于获取节点的根节点前缀，如`root="skt"`,那么根节点就是`class="skt"`,矩形节点`class="skt-rect"`,圆形节点`class="skt-circle"`|
+|root|NO|string|skeleton|用于获取节点的根节点前缀，如`root="skt"`,那么根节点就是`class="skt"`,矩形节点为`class="skt-rect"`,圆形节点为`class="skt-circle"`|
+|animation|NO|string|shuttle|骨架屏loading动画，`shuttle`和`gradient`两种可选|
+|bgcolor|NO|string|#fff|骨架屏背景颜色|
+|show|NO|boolean|false|控制骨架屏的显示与隐藏|
+
+## tips
