@@ -4,9 +4,7 @@ mini program SkeletonScreen
 小程序骨架屏组件 提升用户体验 skr~
 
 ## 效果展示
-![skeleton](img/skteleton.png "skeleton")
-   =======>
-![index](img/index.png "index")
+![skeleton](preview/skteleton.gif "skeleton")
 
 ## 快速上手
 
