@@ -5,6 +5,7 @@ mini program SkeletonScreen
 
 ## 效果展示
 ![skeleton](img/skteleton.png "skeleton")
+   =======>
 ![index](img/index.png "index")
 
 ## 快速上手
